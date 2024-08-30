@@ -376,15 +376,7 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.2.vendor \
     libcodec2_soft_common.vendor \
     libcodec2_vndk.vendor \
-    libsfplugin_ccodec_utils.vendor \
-    libplatformconfig
-
-# Media stagefright
-PRODUCT_PACKAGES += \
-    libstagefrighthw \
-    libstagefright_omx.vendor \
-    libstagefright_softomx.vendor \
-    libstagefright_softomx_plugin.vendor
+    libsfplugin_ccodec_utils.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -432,11 +424,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml
 endif
-
-# OMX
-PRODUCT_PACKAGES += \
-    libmm-omxcore \
-    libOmxCore
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
