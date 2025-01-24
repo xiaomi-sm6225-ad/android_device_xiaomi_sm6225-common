@@ -43,21 +43,41 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.0-impl \
+    android.hardware.audio@7.1-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
-    audio.primary.default \
+    audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
+    audio.primary.bengal \
+    sound_trigger.primary.bengal
+
+PRODUCT_PACKAGES += \
+    audioadsprpcd \
+    libagm \
+    lib_bt_aptx \
+    lib_bt_ble \
+    lib_bt_bundle \
     libaudiopreprocessing \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libtinycompress \
-    libvolumelistener
+    libvolumelistener \
+    libagm_compress_plugin \
+    libagm_mixer_plugin \
+    libagm_pcm_plugin \
+    libagmclient \
+    libagmmixer \
+    libbatterylistener \
+    libfmpal \
+    libhfp_pal \
+    libpalclient \
+    libsndcardparser \
+    vendor.qti.hardware.pal@1.0-impl \
+    vendor.qti.hardware.AGMIPC@1.0-impl
 
 PRODUCT_PACKAGES += \
     XiaomiDolby

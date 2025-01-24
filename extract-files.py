@@ -38,6 +38,12 @@ lib_fixups: lib_fixups_user_type = {
     (
     ): lib_fixup_vendor_suffix,
     (
+        'libar-pal',
+        'libar-acdb',
+        'liblx-osal',
+        'libats',
+        'libagm',
+        'libpalclient',
     ): lib_fixup_remove,
 }
 

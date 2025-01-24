@@ -30,9 +30,6 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/lib_bt_aptx.so
-vendor/lib64/lib_bt_ble.so
-vendor/lib64/lib_bt_bundle.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbt-hidlclient.so
@@ -291,7 +288,6 @@ vendor/etc/init.qti.fm.sh
 vendor/lib/vendor.qti.hardware.fm@1.0.so
 system/lib64/vendor.qti.hardware.fm-V1-ndk.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/libfmpal.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Gatekeeper
@@ -433,7 +429,6 @@ vendor/etc/vintf/manifest/vendor.qti.hardware.lights.service.xml
 # Listen
 vendor/etc/vintf/manifest/manifest_non_qmaa.xml
 vendor/etc/vintf/manifest/manifest_non_qmaa_extn.xml
-vendor/lib/hw/sound_trigger.primary.bengal.so
 vendor/lib/libcapiv2svacnnvendor.so
 vendor/lib/libcapiv2svarnnvendor.so
 vendor/lib/libcapiv2uvvendor.so
@@ -441,7 +436,6 @@ vendor/lib/libeai_fixed_32.so
 vendor/lib/liblistensoundmodel2vendor.so
 vendor/lib/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
 vendor/lib/vendor.qti.hardware.ListenSoundModel@1.0.so
-vendor/lib64/hw/sound_trigger.primary.bengal.so
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2uvvendor.so
