@@ -58,6 +58,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libcodec2_soft_ac4dec.so',
     'vendor/lib64/libcodec2_soft_ddpdec.so'): blob_fixup()
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
+    'vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc': blob_fixup()
+        .regex_replace('group system gps radio vendor_qti_diag vendor_ssgtzd', 'group system gps radio vendor_qti_diag'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
