@@ -165,6 +165,9 @@ vendor/etc/display/advanced_sf_offsets.xml
 vendor/etc/init/init.qti.display_boot.rc
 vendor/etc/init/qdcmss.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
+vendor/lib/qti.video.utils.videobufferlayout.so
+vendor/lib/libsnsapi.so
+vendor/lib/libsensorslog.so
 vendor/lib64/hw/gralloc.bengal.so
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libdisplayconfig.qti.so
@@ -184,8 +187,12 @@ vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmcore.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libsdmutils.so
+vendor/lib64/libssc.so
+vendor/lib64/libsnsapi.so
+vendor/lib64/libsensorslog.so
 vendor/lib64/libtinyxml.so
 vendor/lib64/libtinyxml2_1.so
+vendor/lib64/sns_client_example.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
@@ -465,6 +472,7 @@ vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
 vendor/etc/vintf/manifest/c2_manifest_vendor_sapphire.xml:vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/lib/android.hardware.media.c2@1.0.so
 vendor/lib/libmediautils_vendor.so
+vendor/lib/libofflinelog.so
 vendor/lib/libqc2audio_base.so
 vendor/lib/libqc2audio_basecodec.so
 vendor/lib/libqc2audio_core.so
@@ -487,9 +495,12 @@ vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib64/android.hardware.media.c2@1.0.so
 vendor/lib64/libmediautils_vendor.so
+vendor/lib/libvideoutils.so
+vendor/lib/libvideotxr.so
 vendor/lib64/libmmosal_vendor.so
 vendor/lib64/libmmrtpdecoder_vendor.so
 vendor/lib64/libmmrtpencoder_vendor.so
+vendor/lib64/libofflinelog.so
 vendor/lib64/libqc2audio_base.so
 vendor/lib64/libqc2audio_basecodec.so
 vendor/lib64/libqc2audio_core.so
@@ -510,6 +521,8 @@ vendor/lib64/libqcodec2_mockqc2filter.so
 vendor/lib64/libqcodec2_platform.so
 vendor/lib64/libqcodec2_utils.so
 vendor/lib64/libqcodec2_v4l2codec.so
+vendor/lib64/libvideoutils.so
+vendor/lib64/libvideotxr.so
 
 # Memory
 vendor/lib/libvmmem.so
@@ -633,6 +646,9 @@ vendor/lib64/vendor.qti.qspmhal@1.0.so
 vendor/bin/pd-mapper
 vendor/bin/pm-proxy
 vendor/bin/pm-service
+vendor/lib/libpdmapper.so
+vendor/lib/libpdnotifier.so
+vendor/lib/libperipheral_client.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
 vendor/lib64/libperipheral_client.so
@@ -700,6 +716,9 @@ vendor/etc/init/qmipriod.debug.rc
 vendor/etc/init/qmipriod.rc
 vendor/etc/sdr_config.cfg
 vendor/etc/sec_config
+vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_common_so.so
+vendor/lib/libqmi_encdec.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libidl.so
 vendor/lib64/libqmi.so
@@ -751,6 +770,18 @@ vendor/bin/ssr_setup
 vendor/bin/subsystem_ramdump
 vendor/lib/libsubsystem_control.so
 vendor/lib64/libsubsystem_control.so
+
+# Thermal
+vendor/bin/thermal-engine-v2
+vendor/etc/init/init_thermal-engine-v2.rc
+vendor/lib/libthermalclient.so
+vendor/lib64/liblmthermallistner.so
+vendor/lib64/libthermalclient.so
+
+
+# Thermal (Xiaomi)
+vendor/bin/mi_thermald
+vendor/etc/init/init.mi_thermald.rc
 
 # Time
 vendor/app/TimeService/TimeService.apk
