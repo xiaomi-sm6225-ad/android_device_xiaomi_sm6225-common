@@ -157,7 +157,6 @@ odm/lib64/libmlipay.so:vendor/lib64/libmlipay.so
 odm/lib64/libmlipay@1.1.so:vendor/lib64/libmlipay@1.1.so
 odm/lib64/libteeclientjni.so:vendor/lib64/libteeclientjni.so
 odm/lib64/libwvkeybox.so:vendor/lib64/libwvkeybox.so
-odm/lib64/vendor.xiaomi.hardware.mlipay@1.0.so:vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
 
 # Radio
 system/etc/permissions/privapp-permissions-qti.xml

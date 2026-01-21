@@ -211,7 +211,6 @@ vendor/lib64/hw/displayfeature.default.so
 vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
 vendor/lib64/libdisplayfeature.so
 vendor/lib64/libdisplayfeatureservice.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 
 # Dolby
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
@@ -470,8 +469,6 @@ vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
 vendor/etc/media_khaje_v0/video_system_specs.json
 vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
 vendor/etc/vintf/manifest/c2_manifest_vendor_sapphire.xml:vendor/etc/vintf/manifest/c2_manifest_vendor.xml
-vendor/lib/android.hardware.media.c2@1.0.so
-vendor/lib/libmediautils_vendor.so
 vendor/lib/libofflinelog.so
 vendor/lib/libqc2audio_base.so
 vendor/lib/libqc2audio_basecodec.so
@@ -493,8 +490,6 @@ vendor/lib/libqcodec2_mockqc2filter.so
 vendor/lib/libqcodec2_platform.so
 vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
-vendor/lib64/android.hardware.media.c2@1.0.so
-vendor/lib64/libmediautils_vendor.so
 vendor/lib/libvideoutils.so
 vendor/lib/libvideotxr.so
 vendor/lib64/libmmosal_vendor.so
@@ -610,11 +605,9 @@ vendor/lib64/liblearningmodule.so
 vendor/lib64/liblightninglaunches.so
 vendor/lib64/liblmutils-ns.so
 vendor/lib64/libmemperfd.so
-vendor/lib64/libmemunreachable.so
 vendor/lib64/libmeters-ns.so
 vendor/lib64/libmeters.so
 vendor/lib64/libpasrutils.so
-vendor/lib64/libpcap.so
 vendor/lib64/libperfconfig.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libperfioctl.so
@@ -793,7 +786,6 @@ system_ext/lib64/vendor.xiaomi.hw.touchfeature-V1-ndk.so
 vendor/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service
 vendor/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc
 vendor/lib64/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so
-vendor/lib64/vendor.xiaomi.hw.touchfeature@1.0.so
 
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
