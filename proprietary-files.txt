@@ -19,7 +19,6 @@ vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libshoebox.so
 
 # Bluetooth
-system_ext/etc/bluetooth/leaudio_configs.xml
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
@@ -276,11 +275,15 @@ vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
 
 # FM
+system/lib/vendor.qti.hardware.fm-V1-ndk.so
+system_ext/lib/vendor.qti.hardware.fm@1.0.so
 system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/etc/init/init.qti.fm.rc
 vendor/etc/init.qti.fm.sh
+vendor/lib/vendor.qti.hardware.fm@1.0.so
+system/lib64/vendor.qti.hardware.fm-V1-ndk.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/libfmpal.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
@@ -307,6 +310,7 @@ vendor/etc/gpfspath_oem_config.xml
 vendor/etc/izat.conf
 vendor/etc/lowi.conf
 vendor/etc/xtwifi.conf
+vendor/lib/libgps.utils.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libengineplugin.so
 vendor/lib64/libgdtap.so
@@ -396,8 +400,8 @@ vendor/lib64/libhdcpsrm.so
 vendor/lib64/libmm-hdcpmgr.so
 
 # Hotword Enrollment
-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
 product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
+product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
@@ -575,6 +579,8 @@ vendor/lib/libqti-iopd-client.so
 vendor/lib/libqti-iopd.so
 vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
+vendor/lib/libqti-util.so
+vendor/lib/libqti-utils.so
 vendor/lib/libskewknob.so
 vendor/lib/vendor.qti.hardware.iop@1.0.so
 vendor/lib/vendor.qti.hardware.iop@2.0.so
@@ -651,6 +657,7 @@ system_ext/lib/vendor.qti.hardware.qccsyshal@1.1.so
 system_ext/lib/vendor.qti.hardware.qccsyshal@1.2-halimpl.so
 system_ext/lib/vendor.qti.hardware.qccsyshal@1.2.so
 system_ext/lib/vendor.qti.hardware.qccvndhal@1.0.so
+system_ext/lib/vendor.qti.qccsyshal_aidl-V1-ndk.so
 system_ext/lib/vendor.qti.qccvndhal_aidl-V1-ndk.so
 system_ext/lib64/libqcc.so
 system_ext/lib64/libqccdme.so
@@ -662,12 +669,18 @@ system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2.so
 system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
+system_ext/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so
 system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
 vendor/bin/qcc-trd
 vendor/bin/qcc-vendor
 vendor/etc/init/init.qccvendor.rc
 vendor/etc/init/init.qdmastats.rc
-vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
+vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so
+vendor/lib/vendor.qti.hardware.qccsyshal@1.1.so
+vendor/lib/vendor.qti.hardware.qccsyshal@1.2.so
+vendor/lib/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
+vendor/lib/vendor.qti.hardware.qccvndhal@1.0.so
+vendor/lib/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
 vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libqcc_sdk.so
 vendor/lib64/libqcci_legacy.so
@@ -767,6 +780,7 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 # Trusted User Interface
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
+vendor/lib64/libStDrvInt.so
 vendor/lib64/libSecureUILib.so
 vendor/lib64/libloadtrusteduiapp.so
 vendor/lib64/libsecureui.so
