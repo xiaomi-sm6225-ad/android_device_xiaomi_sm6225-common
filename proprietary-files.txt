@@ -275,7 +275,7 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Fastcv
 vendor/lib64/libfastcvdsp_stub.so
--vendor/lib64/libfastcvopt.so
+vendor/lib64/libfastcvopt.so
 
 # FM
 system/lib/vendor.qti.hardware.fm-V1-ndk.so
@@ -285,10 +285,10 @@ system_ext/lib64/libfm-hci.so
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/etc/init/init.qti.fm.rc
 vendor/etc/init.qti.fm.sh
-vendor/lib/vendor.qti.hardware.fm@1.0.so
+vendor/lib/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor
 system/lib64/vendor.qti.hardware.fm-V1-ndk.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -468,7 +468,7 @@ vendor/lib/libqc2audio_base.so
 vendor/lib/libqc2audio_basecodec.so
 vendor/lib/libqc2audio_core.so
 vendor/lib/libqc2audio_hooks.so
-vendor/lib/libqc2audio_hwaudiocodec.so
+vendor/lib/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF 
 vendor/lib/libqc2audio_platform.so
 vendor/lib/libqc2audio_swaudiocodec.so
 vendor/lib/libqc2audio_utils.so
@@ -494,7 +494,7 @@ vendor/lib64/libqc2audio_base.so
 vendor/lib64/libqc2audio_basecodec.so
 vendor/lib64/libqc2audio_core.so
 vendor/lib64/libqc2audio_hooks.so
-vendor/lib64/libqc2audio_hwaudiocodec.so
+vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF 
 vendor/lib64/libqc2audio_platform.so
 vendor/lib64/libqc2audio_swaudiocodec.so
 vendor/lib64/libqc2audio_utils.so
@@ -678,20 +678,20 @@ vendor/bin/qcc-trd
 vendor/bin/qcc-vendor
 vendor/etc/init/init.qccvendor.rc
 vendor/etc/init/init.qdmastats.rc
-vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so
-vendor/lib/vendor.qti.hardware.qccsyshal@1.1.so
-vendor/lib/vendor.qti.hardware.qccsyshal@1.2.so
+vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib/vendor.qti.hardware.qccsyshal@1.1.so;MODULE_SUFFIX=_vendor
+vendor/lib/vendor.qti.hardware.qccsyshal@1.2.so;MODULE_SUFFIX=_vendor
 vendor/lib/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
-vendor/lib/vendor.qti.hardware.qccvndhal@1.0.so
+vendor/lib/vendor.qti.hardware.qccvndhal@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
 vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libqcc_sdk.so
 vendor/lib64/libqcci_legacy.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.2.so
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.2.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
-vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so;MODULE_SUFFIX=_vendor
 
 # QCV
 vendor/bin/init.qti.qcv.sh

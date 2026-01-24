@@ -36,6 +36,12 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
+        'vendor.qti.hardware.fm@1.0'
+        'vendor.qti.hardware.qccsyshal@1.0',
+        'vendor.qti.hardware.qccsyshal@1.1',
+        'vendor.qti.hardware.qccsyshal@1.2',
+        'vendor.qti.hardware.qccvndhal@1.0',
+        'vendor.qti.qccvndhal_aidl-V1-ndk',
     ): lib_fixup_vendor_suffix,
     (
         'libar-pal',
@@ -58,6 +64,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libcodec2_soft_ac4dec.so',
     'vendor/lib64/libcodec2_soft_ddpdec.so'): blob_fixup()
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
+    'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
+        .add_needed('libhidlbase_shim.so'),
     'vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc': blob_fixup()
         .regex_replace('group system gps radio vendor_qti_diag vendor_ssgtzd', 'group system gps radio vendor_qti_diag'),
 }  # fmt: skip
