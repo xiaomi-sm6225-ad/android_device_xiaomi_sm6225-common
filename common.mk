@@ -79,9 +79,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.pal@1.0-impl \
     vendor.qti.hardware.AGMIPC@1.0-impl
 
-PRODUCT_PACKAGES += \
-    XiaomiDolby
-
 AUDIO_HAL_DIR := hardware/qcom-caf/sm6225/audio/primary-hal
 
 PRODUCT_COPY_FILES += \
@@ -615,11 +612,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 endif
-
-# VNDK
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v33/arm/arch-arm-armv7-a-neon/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
-    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
 
 # WiFi
 PRODUCT_PACKAGES += \
